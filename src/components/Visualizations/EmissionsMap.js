@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Script from "next/script";
 import { emit } from "process";
 import { useEffect, useState } from "react";
@@ -36,7 +37,7 @@ const data = {
           },
           { attributes: {}, id: "1576", type: "BasicTicker" },
           {
-            attributes: { text: "CO2 emissions in billion tones in 2020" },
+            attributes: { text: "CO2 emissions in million tonnes in 2020" },
             id: "1561",
             type: "Title",
           },
@@ -468,7 +469,7 @@ const data = {
           },
           { attributes: {}, id: "1718", type: "BasicTickFormatter" },
           {
-            attributes: { text: "CO2 emissions in billion tones in 2015" },
+            attributes: { text: "CO2 emissions in million tonnes in 2015" },
             id: "1691",
             type: "Title",
           },
@@ -901,7 +902,7 @@ const data = {
           },
           { attributes: {}, id: "1763", type: "DataRange1d" },
           {
-            attributes: { text: "CO2 emissions in billion tones in 2010" },
+            attributes: { text: "CO2 emissions in million tonnes in 2010" },
             id: "1761",
             type: "Title",
           },
@@ -1341,7 +1342,7 @@ const data = {
           },
           { attributes: {}, id: "1839", type: "LinearScale" },
           {
-            attributes: { text: "CO2 emissions in billion tones in 2005" },
+            attributes: { text: "CO2 emissions in million tonnes in 2005" },
             id: "1831",
             type: "Title",
           },
@@ -1870,7 +1871,7 @@ const data = {
           },
           { attributes: {}, id: "1935", type: "Selection" },
           {
-            attributes: { text: "CO2 emissions in billion tones in 2000" },
+            attributes: { text: "CO2 emissions in million tonnes in 2000" },
             id: "1901",
             type: "Title",
           },
@@ -2606,7 +2607,7 @@ const data = {
           },
           { attributes: {}, id: "1986", type: "BasicTicker" },
           {
-            attributes: { text: "CO2 emissions in billion tones in 1995" },
+            attributes: { text: "CO2 emissions in million tonnes in 1995" },
             id: "1971",
             type: "Title",
           },
@@ -2951,7 +2952,7 @@ const data = {
             type: "ColorBar",
           },
           {
-            attributes: { text: "CO2 emissions in billion tones in 1990" },
+            attributes: { text: "CO2 emissions in million tonnes in 1990" },
             id: "2041",
             type: "Title",
           },
@@ -3448,7 +3449,7 @@ const data = {
           { attributes: {}, id: "2119", type: "LinearScale" },
           { attributes: {}, id: "2115", type: "DataRange1d" },
           {
-            attributes: { text: "CO2 emissions in billion tones in 1985" },
+            attributes: { text: "CO2 emissions in million tonnes in 1985" },
             id: "2111",
             type: "Title",
           },
@@ -3633,7 +3634,7 @@ const data = {
             type: "LinearAxis",
           },
           {
-            attributes: { text: "CO2 emissions in billion tones in 1980" },
+            attributes: { text: "CO2 emissions in million tonnes in 1980" },
             id: "2181",
             type: "Title",
           },
@@ -3932,17 +3933,15 @@ const data = {
 export default function EmissionsMap() {
   const [year, setYear] = useState(1980);
   useEffect(() => {
-    const d = document.getElementById("24252295-9729-4f5a-b5bb-b38ec6962c2f");
-    d.innerHTML = "";
-    window.Bokeh.embed.embed_item(
-      data[year],
-      "24252295-9729-4f5a-b5bb-b38ec6962c2f"
-    );
-  }, [year]);
+    for (let key of Object.keys(data)) {
+      window.Bokeh.embed.embed_item(data[key], `map-${key}`);
+    }
+  }, []);
   return (
-    <>
-      <span>Selected year: {year}</span>
+    <div>
+      <div>Selected year: {year}</div>
       <input
+        className="w-[900px]"
         onChange={(e) => {
           setYear(e.target.value);
         }}
@@ -3952,13 +3951,17 @@ export default function EmissionsMap() {
         step={5}
         defaultValue={year}
       />
-      <div className="h-[600px] w-[900px]">
-        <div
-          className="bk-root"
-          id="24252295-9729-4f5a-b5bb-b38ec6962c2f"
-          data-root-id="1096"
-        ></div>
+      <div className="relative h-[500px] w-[900px]">
+        {Object.keys(data).map((key) => {
+          return (
+            <div
+              key={key}
+              id={`map-${key}`}
+              className={clsx("absolute", key == year ? "z-20" : "z-10")}
+            ></div>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 }
