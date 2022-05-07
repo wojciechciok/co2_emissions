@@ -2,7 +2,7 @@ import EmissionsMap from "@/components/Visualizations/EmissionsMap";
 import EmissionsMapPerCapita from "@/components/Visualizations/EmissionsMapPerCapita";
 import Reference from "@/components/Reference";
 import Section from "@/components/Layout/Section";
-import Top10Graph from "@/components/Visualizations/top10Graph";
+import Top10Graph from "@/components/Visualizations/Top10Graph";
 export default function ImpactSection() {
   return (
     <Section label={"Which countries have the biggest impact?"}>
