@@ -4,11 +4,7 @@ export default function EmissionsGraph() {
   useEffect(() => {
     window.Bokeh.embed.embed_item(data, "emissions-graph");
   });
-  return (
-    <>
-      <div className="bk-root" id="emissions-graph" data-root-id="1096"></div>
-    </>
-  );
+  return <div className="bk-root" id="emissions-graph"></div>;
 }
 
 const data = {
