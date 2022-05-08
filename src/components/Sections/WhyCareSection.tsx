@@ -72,14 +72,20 @@ export default function WhyCareSection() {
             The amount of rise in carbon dioxide levels since the late 1950s
             would naturally, in the context of past ice ages, have taken
             somewhere in the range of 5,000 to 20,000 years; we've managed to do
-            it in about 60. At the same time, global median temperature has
-            risen by more than 1 degree Celsius since 1850. The rapid rate of
-            temperature rise over such a short period time points to only one
-            thing, and that is the addition of greenhouse gasses, primarily
-            carbon dioxide, into the environment.
+            it in about 60. At the same time, global median of temperature
+            anomalies (graph on the right) has risen by more than 1 degree
+            Celsius since 1850. The rapid rate of temperature rise over such a
+            short period time points to only one thing, and that is the addition
+            of greenhouse gasses, primarily carbon dioxide, into the
+            environment.
             <Reference
               href={
                 "https://www.climate.gov/news-features/climate-qa/if-carbon-dioxide-hits-new-high-every-year-why-isn%E2%80%99t-every-year-hotter-last"
+              }
+            />
+            <Reference
+              href={
+                "https://tamino.wordpress.com/2018/07/29/why-use-temperature-anomaly/"
               }
             />
           </div>
@@ -90,13 +96,13 @@ export default function WhyCareSection() {
         Greenhouse gasses have a very direct impact on peoples' health. The Air
         Quality Life Index translates long-term exposure to particulate
         pollution concentrations into their impact on life expectancy. The
-        AQLI’s core finding is that sustained exposure to an additional 10
+        AQLI's core finding is that sustained exposure to an additional 10
         micrograms per cubic meter (μg/m3) of PM2.5 (particulate matter with
         diameter less than 2.5 μm) reduces life expectancy by 0.98 years. This
-        means that Shanghai’s residents could expect to live 2.3 years longer if
+        means that Shanghai's residents could expect to live 2.3 years longer if
         it permanently reduced concentrations to the WHO guideline. In the
         United States, where the severity of particulate pollution is generally
-        relatively small compared to that in many other countries, California’s
+        relatively small compared to that in many other countries, California's
         Central Valley residents could expect to live up to six months longer
         than they currently would if particulate pollution in the city were
         reduced to the WHO guideline.
