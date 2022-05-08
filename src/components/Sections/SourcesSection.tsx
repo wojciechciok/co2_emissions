@@ -9,10 +9,10 @@ export default function SourcesSection() {
       <div className="flex flex-col gap-6">
         <div>
           Fossil fuels, including coal, petroleum, and natural gas are known to
-          release large amounts of greenhouse gasses when burned for
-          energy—leading to our dangerously changing climate. Additionally, the
-          methods used to access these fuel sources can be significantly
-          damaging to the environment.
+          release large amounts of greenhouse gasses when burned for energy -
+          leading to our dangerously changing climate. Additionally, the methods
+          used to access these fuel sources can be significantly damaging to the
+          environment.
         </div>
         <div>
           If burning fossil fuels really is damaging life on earth, then why are
@@ -31,7 +31,7 @@ export default function SourcesSection() {
               Fossil fuels are fantastic at producing energy. Earth's fossil
               fuel reserves were formed over millions of years as the organic
               material of ancient plants and microorganisms (not dinosaurs) were
-              compressed and heated into dense deposits of carbon—basically
+              compressed and heated into dense deposits of carbon - basically
               reservoirs of condensed energy. For this reason fossil fuels are
               incredibly “energy dense“, meaning a little bit of a fossil fuel
               can produce a whole lot of energy.
