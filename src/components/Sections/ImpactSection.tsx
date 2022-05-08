@@ -17,7 +17,7 @@ export default function ImpactSection() {
           <EmissionsMap />
           <div className="self-center text-7xl">
             China's CO2 emission levels grew by{" "}
-            <span className="font-semibold">714%</span> in last 40 years.
+            <span className="font-semibold">614%</span> in last 40 years.
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function ImpactSection() {
           }
         />
       </div>
-      <div className="mt-10 grid grid-cols-[1fr_auto] gap-10">
+      <div className="grid grid-cols-[1fr_auto] gap-10">
         <div className="self-center text-7xl">
           Three countries are producing more than{" "}
           <span className="font-semibold">51%</span> of global CO2 emissions.
