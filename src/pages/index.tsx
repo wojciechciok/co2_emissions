@@ -57,9 +57,14 @@ export default function Home() {
         </div>
 
         <WhyCareSection />
-
-        <div className="mt-10">Authors: Wojciech Ciok and Kacper Zyla</div>
       </Layout>
+      <footer className="bg-[#ebb134]">
+        <div className=" py-7">
+          <div className="text-center text-3xl text-white">
+            <div>Made by Wojciech Ciok &amp; Kacper Zyla</div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

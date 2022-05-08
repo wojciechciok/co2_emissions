@@ -9,7 +9,7 @@ export default function SourcesSection() {
       <div className="flex flex-col gap-6">
         <div>
           Fossil fuels, including coal, petroleum, and natural gas are known to
-          release large amounts of greenhouse gases when burned for
+          release large amounts of greenhouse gasses when burned for
           energy—leading to our dangerously changing climate. Additionally, the
           methods used to access these fuel sources can be significantly
           damaging to the environment.
@@ -26,9 +26,7 @@ export default function SourcesSection() {
       <div className="my-20">
         <div className="mb-6 grid grid-cols-3 gap-20">
           <div>
-            <div className="mb-4 text-center text-4xl font-semibold">
-              1. Efficiency
-            </div>
+            <div className="mb-4 text-4xl font-semibold">1. Efficiency</div>
             <div>
               Fossil fuels are fantastic at producing energy. Earth's fossil
               fuel reserves were formed over millions of years as the organic
@@ -40,9 +38,7 @@ export default function SourcesSection() {
             </div>
           </div>
           <div>
-            <div className="mb-4 text-center text-4xl font-semibold">
-              2. Convenience
-            </div>
+            <div className="mb-4 text-4xl font-semibold">2. Convenience</div>
             <div>
               To unlock most alternative fuels (think solar, geothermal, wind,
               etc…) we first have to figure out how to efficiently collect,
@@ -55,9 +51,7 @@ export default function SourcesSection() {
             </div>
           </div>
           <div>
-            <div className="mb-4 text-center text-4xl font-semibold">
-              3. Logistics
-            </div>
+            <div className="mb-4 text-4xl font-semibold">3. Logistics</div>
             <div>
               Fossil fuels have been the main source energy in much of the world
               for the past two centuries. Two centuries may not seem like such a
@@ -75,11 +69,62 @@ export default function SourcesSection() {
       <div className="grid grid-cols-[auto_1fr] gap-10">
         <EnergyMap />
         <div className="self-center text-7xl">
-          In 2020 <span className="font-semibold">83%</span> of world's enregry
+          In 2020 <span className="font-semibold">83%</span> of world's energy
           came from fossil fuels.
         </div>
       </div>
-      <EnergyGraph />
+      <div className="mt-20 grid grid-cols-[1fr_auto] gap-10">
+        <div className="flex flex-col justify-around">
+          <div>
+            Fine particulate matter, like black carbon along with other fossil
+            fuel-produced pollutants, can have major health impacts. Switching
+            to renewable energy sources that don't emit pollutants - like solar
+            and wind power - could have an almost immediate impact on air
+            quality by halting the production of these particles. While some
+            renewable energy sources - like biomass and geothermal power - do
+            emit air pollutants, they do so at a much lower rate than coil- or
+            gas-fired power plants.
+            <Reference
+              href={
+                "https://www.renewableenergymagazine.com/emily-folk/five-ways-renewable-energy-improves-air-quality-20201105"
+              }
+            />
+          </div>
+          <div>
+            Few countries consume more energy per capita than Sweden, but
+            Swedish carbon emissions are low compared with those of other
+            countries. According to statistics from the World Bank, the average
+            American releases almost four times as much carbon dioxide (CO₂) per
+            year into the atmosphere as the average Swede. The reason for
+            Sweden’s low emission rate is that about 75 per cent of electricity
+            production in Sweden comes from hydroelectric (45%) and nuclear
+            (30%) power. Sweden currently has three nuclear plants with six
+            nuclear reactors in commercial operation.
+            <Reference
+              href={
+                "https://sweden.se/climate/sustainability/energy-use-in-sweden"
+              }
+            />
+          </div>
+          <div>
+            In 2021, Denmark inaugurated Scandinavia's biggest wind farm.
+            "Kriegers Flak" has a total capacity to cover electricity
+            consumption of approximately 600,000 Danish households. The wind
+            farm is located 15 to 40 kilometers off the Danish coast in a 132
+            km2 area in the Baltic Sea and is expected to increase the Danish
+            annual electricity production from wind turbines by approximately 16
+            per cent. More than two-thirds of Denmark's renewable energy comes
+            from bioenergy, which is energy stored in organic material or
+            biomass. Agriculture is big business in Denmark, and it indirectly
+            helps provide energy too, with manure, animal fats, and straw used
+            as the basis for biogas and liquid biofuels.
+            <Reference
+              href={"https://denmark.dk/innovation-and-design/clean-energy"}
+            />
+          </div>
+        </div>
+        <EnergyGraph />
+      </div>
     </Section>
   );
 }

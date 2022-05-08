@@ -112,7 +112,7 @@ const data = {
         { attributes: {}, id: "139168", type: "WheelZoomTool" },
         {
           attributes: {
-            text: "Emissions of CO2 in billion of tonnes vs % share of renewable energy in the World",
+            text: "Emissions of CO2 in million of tonnes vs % share of renewable energy in the World",
           },
           id: "138649",
           type: "Title",
@@ -219,7 +219,7 @@ const data = {
         { attributes: {}, id: "139194", type: "Selection" },
         {
           attributes: {
-            text: "Emissions of CO2 in billion of tonnes vs % share of renewable energy in China",
+            text: "Emissions of CO2 in million of tonnes vs % share of renewable energy in China",
           },
           id: "139149",
           type: "Title",
@@ -1135,7 +1135,7 @@ const data = {
         },
         {
           attributes: {
-            text: "Emissions of CO2 in billion of tonnes vs % share of renewable energy in USA",
+            text: "Emissions of CO2 in million of tonnes vs % share of renewable energy in USA",
           },
           id: "139049",
           type: "Title",
@@ -1444,7 +1444,7 @@ const data = {
         },
         {
           attributes: {
-            text: "Emissions of CO2 in billion of tonnes vs % share of renewable energy in Denmark",
+            text: "Emissions of CO2 in million of tonnes vs % share of renewable energy in Denmark",
           },
           id: "138849",
           type: "Title",
@@ -2722,7 +2722,7 @@ const data = {
         },
         {
           attributes: {
-            text: "Emissions of CO2 in billion of tonnes vs % share of renewable energy in Sweden",
+            text: "Emissions of CO2 in million of tonnes vs % share of renewable energy in Sweden",
           },
           id: "138749",
           type: "Title",
@@ -3015,7 +3015,7 @@ const data = {
         },
         {
           attributes: {
-            text: "Emissions of CO2 in billion of tonnes vs % share of renewable energy in Poland",
+            text: "Emissions of CO2 in million of tonnes vs % share of renewable energy in Poland",
           },
           id: "138949",
           type: "Title",

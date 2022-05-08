@@ -31,7 +31,7 @@ export default function HistorySection() {
             fuels are still the cheapest, most reliable energy resources
             available. When a developing country wants to build a functional
             economic system and end rampant poverty, it turns to fossil fuels.
-            Pressure to decrease greenhouse gases emissions is a source of
+            Pressure to decrease greenhouse gasses emissions is a source of
             controversy as poor and developing countries are asked to give up a
             resource which was exploited by western countries for so long.
             <Reference
