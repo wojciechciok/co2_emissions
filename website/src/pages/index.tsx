@@ -66,7 +66,23 @@ export default function Home() {
         </div>
 
         <WhyCareSection />
-        <Section label={"Links"}>ok</Section>
+        <Section label={"Links"}>
+          <ol className="ml-10 list-decimal">
+            <li>
+              Python notebook code: <a></a>
+            </li>
+            <li>Python notebook as Google Colab project: </li>
+            <li>
+              Datasets:{" "}
+              <a
+                className="text-blue-500 no-underline hover:underline"
+                href="https://github.com/wojciechciok/co2_emissions/tree/main/datasets"
+              >
+                https://github.com/wojciechciok/co2_emissions/tree/main/datasets
+              </a>
+            </li>
+          </ol>
+        </Section>
       </Layout>
       <footer className="bg-[#ebb134]">
         <div className=" py-7">
