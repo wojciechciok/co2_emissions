@@ -7,7 +7,7 @@ import Statement, { Highlight } from "./Statement";
 export default function SourcesSection() {
   return (
     <Section label="How important are fossil fuels for today's society?">
-      <div className="flex flex-col gap-6">
+      <div className="grid grid-cols-2 gap-10">
         <div>
           Fossil fuels, including coal, petroleum, and natural gas are known to
           release large amounts of greenhouse gasses when burned for energy -
