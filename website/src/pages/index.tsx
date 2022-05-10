@@ -69,7 +69,13 @@ export default function Home() {
         <Section label={"Links"}>
           <ol className="ml-10 list-decimal">
             <li>
-              Python notebook code: <a></a>
+              Python notebook code:{" "}
+              <a
+                className="text-blue-500 no-underline hover:underline"
+                href="https://github.com/wojciechciok/co2_emissions/blob/main/notebook/FinalProjectSocialDataVis.ipynb"
+              >
+                https://github.com/wojciechciok/co2_emissions/blob/main/notebook/FinalProjectSocialDataVis.ipynb
+              </a>
             </li>
             <li>
               Python notebook as Google Colab project:{" "}
