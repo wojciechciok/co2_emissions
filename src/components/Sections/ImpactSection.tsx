@@ -3,6 +3,7 @@ import EmissionsMapPerCapita from "@/components/Visualizations/EmissionsMapPerCa
 import Reference from "@/components/Reference";
 import Section from "@/components/Layout/Section";
 import Top10Graph from "@/components/Visualizations/Top10Graph";
+import Statement, { Highlight } from "./Statement";
 export default function ImpactSection() {
   return (
     <Section label={"Which countries have the biggest impact?"}>
@@ -15,10 +16,10 @@ export default function ImpactSection() {
         </div>
         <div className="grid grid-cols-[auto_1fr] gap-10">
           <EmissionsMap />
-          <div className="self-center text-7xl">
-            China's CO2 emission levels grew by{" "}
-            <span className="font-semibold">614%</span> in last 40 years.
-          </div>
+          <Statement>
+            China's CO2 emission levels grew by <Highlight>614%</Highlight> in
+            last 40 years.
+          </Statement>
         </div>
       </div>
       <div className="my-20">
@@ -39,10 +40,10 @@ export default function ImpactSection() {
         />
       </div>
       <div className="grid grid-cols-[1fr_auto] gap-10">
-        <div className="self-center text-7xl">
-          Three countries are producing more than{" "}
-          <span className="font-semibold">51%</span> of global CO2 emissions.
-        </div>
+        <Statement>
+          Three countries are producing more than <Highlight>51%</Highlight> of
+          global CO2 emissions.
+        </Statement>
         <div>
           <Top10Graph />
         </div>
@@ -62,10 +63,10 @@ export default function ImpactSection() {
         </div>
         <div className="grid grid-cols-[auto_1fr] gap-10">
           <EmissionsMapPerCapita />
-          <div className="self-center text-7xl">
-            USA had <span className="font-semibold">8x</span> more emissions per
-            capita than India in 2020.
-          </div>
+          <Statement>
+            USA had <Highlight>8x</Highlight> more emissions per capita than
+            India in 2020.
+          </Statement>
         </div>
       </div>
     </Section>

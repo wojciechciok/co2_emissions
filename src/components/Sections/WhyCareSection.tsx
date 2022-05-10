@@ -3,6 +3,7 @@ import RiskGraph from "@/components/Visualizations/RiskGraph";
 import TemperatureGraph from "@/components/Visualizations/TemperatureGraph";
 import ExpectancyMap from "@/components/Visualizations/ExpectancyMap";
 import Reference from "../Reference";
+import Statement, { Highlight } from "./Statement";
 
 export default function WhyCareSection() {
   return (
@@ -41,10 +42,10 @@ export default function WhyCareSection() {
       </div>
       <div className="grid grid-cols-[auto_1fr] gap-10">
         <RiskGraph />
-        <div className="self-center text-7xl">
-          Air pollution contributed to{" "}
-          <span className="font-semibold">6.67 million</span> deaths in 2019.
-        </div>
+        <Statement>
+          Air pollution contributed to <Highlight>6.67 million</Highlight>{" "}
+          deaths in 2019.
+        </Statement>
       </div>
       <div className="my-20 grid grid-cols-[1fr_auto] gap-10">
         <div className="flex flex-col justify-around">
@@ -110,10 +111,10 @@ export default function WhyCareSection() {
       </div>
       <div className="grid grid-cols-[auto_1fr] gap-10">
         <ExpectancyMap />
-        <div className="self-center text-7xl">
-          Life expectancy shortened almost{" "}
-          <span className="font-semibold">1.5 years</span> in Poland in 2005.
-        </div>
+        <Statement>
+          Life expectancy shortened almost <Highlight>1.5 years</Highlight> in
+          Poland in 2005.
+        </Statement>
       </div>
     </Section>
   );

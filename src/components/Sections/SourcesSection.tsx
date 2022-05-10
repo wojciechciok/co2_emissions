@@ -2,6 +2,7 @@ import Section from "../Layout/Section";
 import EnergyMap from "@/components/Visualizations/EnergyMap";
 import EnergyGraph from "@/components/Visualizations/EnergyGraph";
 import Reference from "../Reference";
+import Statement, { Highlight } from "./Statement";
 
 export default function SourcesSection() {
   return (
@@ -68,10 +69,10 @@ export default function SourcesSection() {
 
       <div className="grid grid-cols-[auto_1fr] gap-10">
         <EnergyMap />
-        <div className="self-center text-7xl">
-          In 2020 <span className="font-semibold">83%</span> of world's energy
-          came from fossil fuels.
-        </div>
+        <Statement>
+          In 2020 <Highlight>83%</Highlight> of world's energy came from fossil
+          fuels.
+        </Statement>
       </div>
       <div className="mt-20 grid grid-cols-[1fr_auto] gap-10">
         <div className="flex flex-col justify-around">
@@ -96,7 +97,7 @@ export default function SourcesSection() {
             countries. According to statistics from the World Bank, the average
             American releases almost four times as much carbon dioxide (CO₂) per
             year into the atmosphere as the average Swede. The reason for
-            Sweden’s low emission rate is that about 75 per cent of electricity
+            Sweden's low emission rate is that about 75 per cent of electricity
             production in Sweden comes from hydroelectric (45%) and nuclear
             (30%) power. Sweden currently has three nuclear plants with six
             nuclear reactors in commercial operation.
