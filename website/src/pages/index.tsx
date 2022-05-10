@@ -71,7 +71,15 @@ export default function Home() {
             <li>
               Python notebook code: <a></a>
             </li>
-            <li>Python notebook as Google Colab project: </li>
+            <li>
+              Python notebook as Google Colab project:{" "}
+              <a
+                className="text-blue-500 no-underline hover:underline"
+                href="https://colab.research.google.com/drive/1NaHxiZ5GLFFKFlRH-jXmRxW8wh_n27up?usp=sharing"
+              >
+                https://colab.research.google.com/drive/1NaHxiZ5GLFFKFlRH-jXmRxW8wh_n27up?usp=sharing
+              </a>
+            </li>
             <li>
               Datasets:{" "}
               <a
