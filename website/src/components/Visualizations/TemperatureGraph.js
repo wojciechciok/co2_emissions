@@ -586,7 +586,7 @@ const data = {
         },
         {
           attributes: {
-            axis_label: "Annual temperature median (\u00b0C)e",
+            axis_label: "Annual temperature anomalies median (\u00b0C)e",
             formatter: { id: "171441" },
             major_label_policy: { id: "171439" },
             ticker: { id: "171413" },
@@ -597,7 +597,7 @@ const data = {
         { attributes: { end: 36702.503 }, id: "171461", type: "Range1d" },
         {
           attributes: {
-            label: { value: "Annual temperature median (\u00b0C)" },
+            label: { value: "Annual temperature anomalies median (\u00b0C)" },
             renderers: [{ id: "171433" }],
           },
           id: "171458",
@@ -624,7 +624,10 @@ const data = {
             callback: null,
             renderers: [{ id: "171433" }],
             tooltips: [
-              ["Annual temperature median (\u00b0C)", "@median_temperature"],
+              [
+                "Annual temperature anomalies median (\u00b0C)",
+                "@median_temperature",
+              ],
             ],
           },
           id: "171459",
@@ -733,7 +736,7 @@ const data = {
         },
         {
           attributes: {
-            text: "Global annual median temperature vs global CO2 emmisions",
+            text: "Global annual temperature anomalies median vs global CO2 emmisions",
           },
           id: "171398",
           type: "Title",
