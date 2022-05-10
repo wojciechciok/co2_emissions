@@ -6,6 +6,7 @@ import ImpactSection from "@/components/Sections/ImpactSection";
 import WhyCareSection from "@/components/Sections/WhyCareSection";
 import SourcesSection from "@/components/Sections/SourcesSection";
 import Head from "next/head";
+import Section from "@/components/Layout/Section";
 
 export default function Home() {
   return (
@@ -65,6 +66,7 @@ export default function Home() {
         </div>
 
         <WhyCareSection />
+        <Section label={"Links"}>ok</Section>
       </Layout>
       <footer className="bg-[#ebb134]">
         <div className=" py-7">
